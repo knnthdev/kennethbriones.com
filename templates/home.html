@@ -1,31 +1,38 @@
-<html><head>
+<html id="Dad" SameSite="Secure">
+<head>
 	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 
 	<link rel="stylesheet" href="{{ url_for('static', filename='css/home.css') }}">
 	<script src="{{ url_for('static', filename='JS/behavior.js') }}"></script>
-	<title>Kenneth Briones</title>
+	<link rel="texto" href="{{ url_for('static', filename='txt/MyWiki.txt') }}">
+	<title>Blog - Kenneth Briones</title>
 </head>
 
 <body>
 	<header id="head">
-
 		<h1 id="text">
-			Proyecto de Página Web
+			Bienvenido a mi Blog Personal
 		</h1>
 	</header>
-	<div id="imgContenedor">
-		<div>
-			<img id="imgbox">
+	<div class="Bar-creative">
+		<div class="Bar-link">
+			<div id="foto"></div>
 		</div>
+		<div class="patronicio"> 
+			<h1 style="color: aliceblue;">
+				<p id="titulo"></p>
+			</h1>
+			<p id="parrafo">
+			</p>
+			<script>
+				OrdenarTexto();
+			</script>
+		</div>	
 	</div>
-	<footer>
+	<footer class="footer">
 		Kenneth Briones
 	</footer>
 	<script>
-		var t = setInterval(imganimation, 500);
-
 	</script>
-
-
-
-</body></html>
+</body>
+</html>
