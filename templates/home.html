@@ -1,38 +1,67 @@
-<html id="Dad" SameSite="Secure">
+﻿<html id="Dad" SameSite="Secure">
+
 <head>
 	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-
 	<link rel="stylesheet" href="{{ url_for('static', filename='css/home.css') }}">
 	<script src="{{ url_for('static', filename='JS/behavior.js') }}"></script>
-	<link rel="texto" href="{{ url_for('static', filename='txt/MyWiki.txt') }}">
+	<!-- <link rel="stylesheet" href="../static/css/home.css">
+	<script src="../static/js/behavior.js"></script> -->
+
 	<title>Blog - Kenneth Briones</title>
 </head>
 
 <body>
-	<header id="head">
-		<h1 id="text">
-			Bienvenido a mi Blog Personal
-		</h1>
-	</header>
-	<div class="Bar-creative">
-		<div class="Bar-link">
-			<div id="foto"></div>
+	<header>
+		<img class="MyPicture"
+			src="https://scontent.fmga6-1.fna.fbcdn.net/v/t1.6435-1/s200x200/181401401_3859964854120503_7013883171859574706_n.jpg?_nc_cat=110&ccb=1-5&_nc_sid=7206a8&_nc_ohc=GkvLNDmNIqIAX-nj04j&_nc_ht=scontent.fmga6-1.fna&oh=00_AT_dBpzC0lMfNkA7yqhtaH6wGPkzKvpKjnFmk2lLrAAdHg&oe=61FBD8C6"
+			alt="">
+		<div class="title_name">Kenneth Briones
 		</div>
-		<div class="patronicio"> 
-			<h1 style="color: aliceblue;">
-				<p id="titulo"></p>
+	</header>
+	<content class="contenido">
+		<div class="PanelOption">
+			<nav class="navegar">
+				<ul class="lista_desplegable">
+					<li class="l1"><a href="#">Educacion</a></li>
+					<li class="l2"><a href="#">Portafolio</a></li>
+					<li class="l3"><a href="#">Experiencia</a></li>
+
+				</ul>
+			</nav>
+		</div>
+		<div class="pagina">
+			<h1 class="encabezado">
+				Yo
 			</h1>
-			<p id="parrafo">
-			</p>
-			<script>
-				OrdenarTexto();
-			</script>
-		</div>	
-	</div>
-	<footer class="footer">
-		Kenneth Briones
+			<div class="dialogo">
+				<p>
+					Cuando yo era un niño, me gustaba inventar mis propios dichos. "Puedo hacerlo aunque no sepa cómo"
+					ese fue uno de ellos. A medida que crecía, un fuerte sentido de autosuficiencia y responsabilidad
+					hacia mi familia, mis amigos y mi futuro formaron el carácter que ahora poseo.
+				</p>
+				<p>
+					Me dio una fuerza silenciosa que me ayudó a dirigir el curso de mi vida. crecí en Ciudad Sandino en
+					Managua con mi familia. Cuando era joven, decidí aprender un oficio como Técnico en computación.
+				</p>
+				<p>
+					Tenía tan solo diecinueve años de edad cuando emprendí mi primera Misión a Mexico Tijuana. Dormir en
+					otro lugar y buscar mi propia comida hizo que fuera más maduro. Esta madurez y sentido de
+					responsabilidad eran las cualidades perfectas para convertirme en un líder.
+				</p>
+			</div>
+		</div>
+	</content>
+	<footer>
+		<div class="info_personal">
+			<div class="number"><a href="https://wa.me/50584739470"><img
+						src="https://cdn.worldvectorlogo.com/logos/whatsapp-glyph-black.svg" class="iconwame"></a></div>
+			<div class="gmail"><p><img class="icongmail"
+						src="data:image/png;base64,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"
+						alt="">
+						KnnthBriones@gmail.com
+			</p></div>
+		</div>
 	</footer>
-	<script>
-	</script>
 </body>
+
 </html>

@@ -14,6 +14,6 @@ def about():
 
  
 if __name__ == "__main__":
-    app.run(debug=True, port=5500)
     print("the program is already")
+    app.run()              
  
