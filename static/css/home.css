@@ -7,7 +7,8 @@
 body {
 	display: block;
 	margin: 0;
-	max-height: max-content;
+	background:rgb(231, 90, 90);
+	height: 100%;
 }
 
 body::-webkit-scrollbar {
@@ -29,7 +30,6 @@ header {
 	margin: 0;
 	margin-right: 0;
 	right: 0;
-	min-width: 100vh;
 	height: 130px;
 	padding: 1%;
 	font-size: 78px;
@@ -58,8 +58,8 @@ header .MyPicture {
 
 .contenido {
 	display: flex;
+	height: 80%;
 	bottom:0;
-	min-width: 100vh;
 }
 
 content .pagina {
@@ -124,12 +124,9 @@ content .pagina {
 
 footer {
 	display: block;
-	left: 0;
-	right: 0;
-	bottom:0;
-	min-width: 100vh;
 	background: #444;
 	padding: 1%;
+	height: 200px;
 }
 
 footer .info_personal {
